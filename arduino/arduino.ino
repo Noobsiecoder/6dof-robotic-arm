@@ -1,8 +1,7 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
 #include <Servo.h>
-#define SSID "AIRTEL_HOME_WIFI"
-#define PASSWORD "Rgldb#2013"
+#include "config.h"
 
 
 struct servo1 {
@@ -102,7 +101,7 @@ void RotateServo() {
 void setup() {
   Serial.begin(115200);
 
-  WiFi.begin(SSID, PASSWORD);
+  WiFi.begin(SSID, PASS);
   while (WiFi.status() != WL_CONNECTED) {
     Serial.print(".");
     delay(500);
