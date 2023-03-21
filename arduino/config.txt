@@ -1,0 +1,5 @@
+// IMPORTANT
+// rename file as `config.h` in this directory and replace data
+
+#define SSID "WIFI_NAME"
+#define PASS "WIFI_PASS"
