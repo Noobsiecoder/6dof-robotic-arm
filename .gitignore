@@ -1,2 +1,7 @@
 # files
 config.h
+config.js
+
+# misc
+.vscode
+.DS_Store
