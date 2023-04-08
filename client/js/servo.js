@@ -49,7 +49,13 @@ slider6.oninput = function () {
 HOST = ""; // Insert IP
 
 function rotateServo(angle, arm) {
-  fetch(`${HOST}/rotate?` + new URLSearchParams({ angle, arm }))
+  fetch(`${HOST}/rotate?angle=${angle}&arm=${arm}`, {
+    Method: "POST",
+    Headers: {
+      Accept: "application.json",
+      "Content-Type": "application/json",
+    },
+  })
     .then((response) => response.json())
     .then((data) => console.log(data))
     .catch((err) => console.error(`Error serving request: ${err}`));

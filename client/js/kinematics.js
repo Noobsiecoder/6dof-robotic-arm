@@ -6,7 +6,13 @@ function inverseKinematics(event) {
   let y = parseInt(document.getElementById("y_coord").value);
   let z = parseInt(document.getElementById("z_coord").value);
 
-  fetch(`${HOST}/move?x=${x}&y=${y}&z=${z}`)
+  fetch(`${HOST}/move?x=${x}&y=${y}&z=${z}`, {
+    Method: "POST",
+    Headers: {
+      Accept: "application.json",
+      "Content-Type": "application/json",
+    },
+  })
     .then((response) => response.json())
     .then((data) => console.log(data))
     .catch((err) => console.error(`Error serving request: ${err}`));
