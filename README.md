@@ -5,6 +5,8 @@
 
 ## API Reference
 
+#### Rotate link with servo angle
+
 ```http
   POST /rotate?arm=1&angle=180
 ```
@@ -14,7 +16,7 @@
 | `arm`     | `number` | Link/Arm [1..6]     |    ✅    |
 | `angle`   | `number` | Angle(deg) [0..180] |    ✅    |
 
-#### Get item
+#### Move end effector position to specified coordinate spatial system
 
 ```http
   POST /move?x=10&y=5&z=12
