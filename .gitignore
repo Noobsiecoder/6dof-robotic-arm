@@ -1,6 +1,5 @@
 # files
-config.h
-config.js
+config.*
 
 # misc
 .vscode
