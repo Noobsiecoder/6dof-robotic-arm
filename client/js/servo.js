@@ -46,8 +46,6 @@ slider6.oninput = function () {
   servoP6.innerHTML = this.value;
 };
 
-HOST = ""; // Insert IP
-
 function rotateServo(angle, arm) {
   fetch(`${HOST}/rotate?angle=${angle}&arm=${arm}`, {
     Method: "POST",
