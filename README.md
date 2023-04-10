@@ -1,4 +1,4 @@
-# IoT-enabled Robotic Arm with Inverse Kinematic Control: Design and Implementation
+# IoT-based 6DOF Robotic Arm with Inverse Kinematics Control for Remote Operation via Web App
 
 - A research study on an IoT- based robotic arm that utilises an ATmega2560 micro-controller and an ESP8266 WiFi module for network connectivity.
 - The robotic arm is designed to follow inverse kinematic principles and is controlled through REST API communication between a client and a server.
